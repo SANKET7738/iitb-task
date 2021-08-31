@@ -2,25 +2,9 @@ import React, { useState } from 'react';
 import Card from './SingleCard';
 import './Columns.css';
 
-function Columns() {
-    let dataList = [];
-    dataList = [
-        {
-            title: "Title-1",
-            description: `Some quick example text to build on the card title and make up the bulk of
-            the card's content.`
-        },
-        {
-            title: "Title-2",
-            description: `Some quick example text to build on the card title and make up the bulk of
-            the card's content.`
-        },
-        {
-            title: "Title-3",
-            description: `Some quick example text to build on the card title and make up the bulk of
-            the card's content.`
-        },
-    ]
+function Columns({answerList}) {
+    let dataList = answerList;
+
     return (
         <div className="column">
             

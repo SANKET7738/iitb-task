@@ -6,11 +6,56 @@ body {
 
 .App {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .Grid {
   display: flex;
   justify-content: space-evenly;
+}
+
+.Modal {
+  height: 60vh;
+  width: 50vw;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px black solid;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.formLabel {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.formControl {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.Button {
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  margin: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: black;
+  color: white;
 }
