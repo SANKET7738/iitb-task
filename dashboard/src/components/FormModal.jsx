@@ -46,6 +46,9 @@ function FormModal({addToColumn, cardData}) {
                       placeholder="Title" 
                       value={data.title} 
                       onChange={handleTitleInputChange}
+                      pattern="^\p{L}+(?: \p{L}+)*$"
+                      title="Please enter Alphabets"
+                      required
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" id="formGroup" controlId="exampleForm.ControlTextarea1">
@@ -55,6 +58,8 @@ function FormModal({addToColumn, cardData}) {
                       s="textarea" rows={8} 
                       value={data.description}
                       onChange={handleDescriptionInputChange}
+                      minlength={25}
+                      required
                     />
                 </Form.Group>
                 <Form.Select 
